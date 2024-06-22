@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Result</title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                height: 100vh;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            {% if result == 0 %}
+                <h1 style='background-color: lightblue;'>Predicted Cluster is 0</h1 style=''>
+            {% elif result == 1 %}
+                <h1 style='background-color: red;'>Predicted Cluster is 1</h1 style=''>
+            {% else %}
+                <h1 style='background-color: lightgreen;'>Predicted Cluster is 2</h1 style=''>
+            {% endif %}
+        <div>
+    </body>
+</html>

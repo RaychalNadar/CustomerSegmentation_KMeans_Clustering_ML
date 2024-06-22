@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Customer Segmentation</title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                height: 100vh;
+            }
+            div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            form{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>Customer Segmentation</h1>
+            <form action='/submit' method='post'>
+                <table>
+                    <tr>
+                        <td><label for='Orders'>Enter Orders:</label></td>
+                        <td><input type='number' id='Orders' name='Orders' value=3 required></td>
+                        <td><label for='Jordan'>Enter Search Count for Jordan:</label></td>
+                        <td><input type='number' id='Jordan' name='Jordan' value=3 required></td>
+                        <td><label for='Gatorade'>Enter Search Count for Gatorade:</label></td>
+                        <td><input type='number' id='Gatorade' name='Gatorade' value=3 required></td>
+                    </tr>
+                    <tr>
+                        <td><label for='Samsung'>Enter Search Count for Samsung:</label></td>
+                        <td><input type='number' id='Samsung' name='Samsung' value=3 required></td>
+                        <td><label for='Asus'>Enter Search Count for Asus:</label></td>
+                        <td><input type='number' id='Asus' name='Asus' value=3 required></td>
+                        <td><label for='Udis'>Enter Search Count for Udis:</label></td>
+                        <td><input type='number' id='Udis' name='Udis' value=3 required></td>
+                    </tr>
+                    <tr>
+                        <td><label for='Mondelez_International'>Enter Search Count for Mondelez International:</label></td>
+                        <td><input type='number' id='Mondelez_International' name='Mondelez_International' value=3 required></td>
+                        <td><label for='Wrangler'>Enter Search Count for Wrangler:</label></td>
+                        <td><input type='number' id='Wrangler' name='Wrangler' value=3 required></td>
+                        <td><label for='Vans'>Enter Search Count for Vans:</label></td>
+                        <td><input type='number' id='Vans' name='Vans' value=3 required></td>
+                    </tr>
+                    <tr>
+                        <td><label for='Fila'>Enter Search Count for Fila:</label></td>
+                        <td><input type='number' id='Fila' name='Fila' value=3 required></td>
+                        <td><label for='Brooks'>Enter Search Count for Brooks:</label></td>
+                        <td><input type='number' id='Brooks' name='Brooks' value=3 required></td>
+                        <td><label for='HandM'>Enter Search Count for HandM:</label></td>
+                        <td><input type='number' id='HandM' name='HandM' value=3 required></td>
+                    </tr>
+                    <tr>
+                        <td><label for='Diary_Queen'>Enter Search Count for Diary Queen:</label></td>
+                        <td><input type='number' id='Diary_Queen' name='Diary_Queen' value=3 required></td>
+                        <td><label for='Fendi'>Enter Search Count for Fendi:</label></td>
+                        <td><input type='number' id='Fendi' name='Fendi' value=3 required></td>
+                        <td><label for='Hewlett_Packard'>Enter Search Count for Hewlett Packard:</label></td>
+                        <td><input type='number' id='Hewlett_Packard' name='Hewlett_Packard' value=3 required></td>
+                    </tr>
+                    <tr>
+                        <td><label for='Pladis'>Enter Search Count for Pladis:</label></td>
+                        <td><input type='number' id='Pladis' name='Pladis' value=3 required></td>
+                        <td><label for='Asics'>Enter Search Count for Asics:</label></td>
+                        <td><input type='number' id='Asics' name='Asics' value=3 required></td>
+                        <td><label for='Siemens'>Enter Search Count for Siemens:</label></td>
+                        <td><input type='number' id='Siemens' name='Siemens' value=3 required></td>
+                    </tr>
+                    <tr>
+                        <td><label for='JMSmucker'>Enter Search Count for J.M. Smucker:</label></td>
+                        <td><input type='number' id='JMSmucker' name='JMSmucker' value=3 required></td>
+                        <td><label for='Pop_Chips'>Enter Search Count for Pop Chips:</label></td>
+                        <td><input type='number' id='Pop_Chips' name='Pop_Chips' value=3 required></td>
+                        <td><label for='Juniper'>Enter Search Count for Juniper:</label></td>
+                        <td><input type='number' id='Juniper' name='Juniper' value=3 required></td>
+                    </tr>
+                    <tr>
+                        <td><label for='Huawei'>Enter Search Count for Huawei:</label></td>
+                        <td><input type='number' id='Huawei' name='Huawei' value=3 required></td>
+                        <td><label for='Compaq'>Enter Search Count for Compaq:</label></td>
+                        <td><input type='number' id='Compaq' name='Compaq' value=3 required></td>
+                        <td><label for='IBM'>Enter Search Count for IBM:</label></td>
+                        <td><input type='number' id='IBM' name='IBM' value=3 required></td>
+                    </tr>
+                    <tr>
+                        <td><label for='Burberry'>Enter Search Count for Burberry:</label></td>
+                        <td><input type='number' id='Burberry' name='Burberry' value=3 required></td>
+                        <td><label for='Mi'>Enter Search Count for Mi:</label></td>
+                        <td><input type='number' id='Mi' name='Mi' value=3 required></td>
+                        <td><label for='LG'>Enter Search Count for LG:</label></td>
+                        <td><input type='number' id='LG' name='LG' value=3 required></td>
+                    </tr>
+                    <tr>
+                        <td><label for='Dior'>Enter Search Count for Dior:</label></td>
+                        <td><input type='number' id='Dior' name='Dior' value=3 required></td>
+                        <td><label for='Scabal'>Enter Search Count for Scabal:</label></td>
+                        <td><input type='number' id='Scabal' name='Scabal' value=3 required></td>
+                        <td><label for='Tommy_Hilfiger'>Enter Search Count for Tommy Hilfiger:</label></td>
+                        <td><input type='number' id='Tommy_Hilfiger' name='Tommy_Hilfiger' value=3 required></td>
+                    </tr>
+                    <tr>
+                        <td><label for='Hollister'>Enter Search Count for Hollister:</label></td>
+                        <td><input type='number' id='Hollister' name='Hollister' value=3 required></td>
+                        <td><label for='Forever21'>Enter Search Count for Forever 21:</label></td>
+                        <td><input type='number' id='Forever21' name='Forever21' value=3 required></td>
+                        <td><label for='Colavita'>Enter Search Count for Colavita:</label></td>
+                        <td><input type='number' id='Colavita' name='Colavita' value=3 required></td>
+                    </tr>
+                    <tr>
+                        <td><label for='Microsoft'>Enter Search Count for Microsoft:</label></td>
+                        <td><input type='number' id='Microsoft' name='Microsoft' value=3 required></td>
+                        <td><label for='Jiffy_mix'>Enter Search Count for Jiffy mix:</label></td>
+                        <td><input type='number' id='Jiffy_mix' name='Jiffy_mix' value=3 required></td>
+                        <td><label for='Kraft'>Enter Search Count for Kraft:</label></td>
+                        <td><input type='number' id='Kraft' name='Kraft' value=3 required></td>
+                    </tr>
+                </table>
+                <br>
+                <tr><td><button type="submit" style='background-color: red;cursor: pointer;height: 5vh;width:15vh;font-size:25px'>Submit</button></td></tr>
+            </form>
+        </div>
+    </body>
+</html>
